@@ -9,7 +9,8 @@ const router = createRouter({
 		if (savedPosition) return savedPosition;
 
 		const position = {
-			behavior: 'smooth'
+			behavior: 'smooth',
+			top: 90
 		};
 
 		if (to.hash && document.querySelector(to.hash)) position.el = to.hash;
