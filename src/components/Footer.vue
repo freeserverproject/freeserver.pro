@@ -18,6 +18,7 @@ footer {
 	display: flex;
 	padding: 70px 0;
 	width: 100%;
+	font-size: 1.8rem;
 }
 
 footer a {
@@ -26,7 +27,6 @@ footer a {
 
 footer .copyright {
 	color: white;
-	font-size: 2rem;
 	line-height: 26px;
 }
 

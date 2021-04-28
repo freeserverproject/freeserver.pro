@@ -2,7 +2,7 @@
 	<nav class="global-nav" :class="{zoom}">
 		<span class="logo">
 			<router-link :to="{name: 'Home'}" class="no-underline">
-				<img src="../assets/logo.png" alt="FREESERVER Logo">
+				<img src="../assets/logo.svg" alt="FREESERVER Logo">
 			</router-link>
 		</span>
 		<div class="links">
@@ -69,6 +69,7 @@ export default {
 
 .global-nav .links {
 	display: flex;
+	font-size: 2rem;
 }
 
 .global-nav .links a.router-link-hash-match::before {

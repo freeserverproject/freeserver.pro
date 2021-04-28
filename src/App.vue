@@ -22,10 +22,9 @@ body {
 }
 
 a {
-	display: block;
+	display: inline-block;
 	text-decoration: none;
 	margin: 5px 10px;
-	font-size: 2rem;
 	color: white;
 	position: relative;
 }
