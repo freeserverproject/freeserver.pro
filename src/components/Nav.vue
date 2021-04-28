@@ -61,6 +61,7 @@ export default {
 .logo img {
 	height: 65px;
 	transition: all 300ms 0s ease;
+	transform: scale(1.3)
 }
 
 .global-nav.zoom .logo img {
