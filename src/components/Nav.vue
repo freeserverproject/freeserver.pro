@@ -6,7 +6,8 @@
 			</router-link>
 		</span>
 		<div class="links">
-			<hash-match-link :to="{name: 'Home'}">Home</hash-match-link>
+			<hash-match-link :to="{name: 'Home', hash: '#about'}">About</hash-match-link>
+			<hash-match-link :to="{name: 'Home', hash: '#feature'}">Feature</hash-match-link>
 			<hash-match-link :to="{name: 'Home', hash: '#wiki'}">Wiki</hash-match-link>
 			<hash-match-link :to="{name: 'Home', hash: '#sns'}">Socials</hash-match-link>
 			<a href="//maps.freeserver.pro/">Maps</a>
@@ -71,10 +72,6 @@ export default {
 .global-nav .links {
 	display: flex;
 	font-size: 2rem;
-}
-
-.global-nav .links a.router-link-hash-match::before {
-	width: calc(100% + 5px);
 }
 
 </style>
