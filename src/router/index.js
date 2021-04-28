@@ -4,20 +4,6 @@ import Home from '../views/Home.vue';
 
 const router = createRouter({
 	history: createWebHashHistory(),
-	scrollBehavior(to, from, savedPosition) {
-		if (savedPosition) return savedPosition;
-
-		const position = {
-			behavior: 'smooth'
-		};
-
-		if (to.hash && document.querySelector(to.hash)) position.el = to.hash;
-		else {
-			position.top = 0;
-			position.left = 0;
-		}
-		return position;
-	},
 	routes: [
 		{
 			path: '/',
