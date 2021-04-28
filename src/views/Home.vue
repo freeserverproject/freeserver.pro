@@ -32,6 +32,12 @@ export default {
 	name: 'Home',
 	components: {
 		ScrollToSeeMore
+	},
+	mounted () {
+		this.header = this.$el.querySelector('header');
+		window.addEventListener('scroll', () => {
+			this.header.style.backgroundPositionY = `${window.scrollY * 0.3}px`;
+		});
 	}
 }
 </script>
