@@ -6,32 +6,39 @@
 			</div>
 			<scroll-to-see-more @click="$router.push({name: 'Home', hash: '#about'})"/>
 		</header>
-		<div id="about">About</div>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<div id="wiki">Wiki</div>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
+		<div class="card about" id="about">
+			<h1><hash-match-link :to="{name: 'Home', hash: '#about'}">ABOUT</hash-match-link></h1>
+			<div>
+				FREESERVERは実家のような安心感を提供します<br>
+				ゆるく、安心できる場所をお楽しみください。<br>
+				<span>
+					運営も積極的に参加していますので<br>
+					わからないことはいつでも聞いてください
+				</span>
+			</div>
+		</div>
+		<div class="card feature" id="feature">
+			<h1><hash-match-link :to="{name: 'Home', hash: '#feature'}">FEATURE</hash-match-link></h1>
+			<div class="inner">
+				FREESERVERではメインとなる生活鯖の他に<br>
+				ミニゲームも定期開催しています。<br>
+				<span>
+					イベント日程等詳細につきましては<br>
+					Discordにて随時発信しております、是非公式サーバーへご参加ください
+				</span>
+			</div>
+		</div>
 	</main>
 </template>
 <script>
 import ScrollToSeeMore from '@/components/ScrollToSeeMore.vue';
+import HashMatchLink from '@/components/HashMatchLink.vue';
 
 export default {
 	name: 'Home',
 	components: {
-		ScrollToSeeMore
+		ScrollToSeeMore,
+		HashMatchLink
 	},
 	mounted () {
 		this.header = this.$el.querySelector('header');
@@ -73,5 +80,38 @@ export default {
 	left: 50%;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
+}
+
+.card {
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	overflow: hidden;
+	color: white;
+	padding-bottom: 30px;
+	font-weight: 400;
+	margin: 20px;
+}
+
+.card>div {
+	display: inline-block;
+	background-color: #0000004b;
+	border-radius: 3px;
+	padding: 50px;
+	backdrop-filter: blur(5px);
+}
+
+.card>div>span {
+	display: inline-block;
+	font-size: 1.3rem;
+	padding: 30px;
+	padding-bottom: 0;
+}
+
+.card.about {
+	background-image: url(../assets/pics/aboutBackground.png);
+}
+.card.feature {
+	background-image: url(../assets/pics/featureBackground.png);
 }
 </style>
