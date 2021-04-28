@@ -9,7 +9,7 @@
 			<hash-match-link :to="{name: 'Home'}">Home</hash-match-link>
 			<hash-match-link :to="{name: 'Home', hash: '#wiki'}">Wiki</hash-match-link>
 			<a href="//maps.freeserver.pro/">Maps</a>
-			<hash-match-link :to="{name: 'Home', hash: '#sns'}">SNS</hash-match-link>
+			<hash-match-link :to="{name: 'Home', hash: '#sns'}">Socials</hash-match-link>
 		</div>
 	</nav>
 </template>

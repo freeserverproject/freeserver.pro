@@ -2,7 +2,7 @@
 	<footer>
 		<router-link :to="{path: '/privacy-policy'}">プライバシーポリシー</router-link>
 		<router-link :to="{path: '/privacy-policy'}">Minecraftサーバー利用規約</router-link>
-		<router-link :to="{path: '/privacy-policy'}">運営募集</router-link>
+		<router-link :to="{path: '/join-us'}">運営募集</router-link>
 		<span class="copyright">&copy;{{ new Date().getFullYear() }} FREESERVER Project</span>
 	</footer>
 </template>

@@ -40,6 +40,10 @@ const router = createRouter({
 					path: 'privacy-policy',
 					name: 'PrivacyPolicy',
 					component: () => import(/* webpackChunkName: "PrivacyPolicy" */ '../articles/PrivacyPolicy.vue')
+				}, {
+					path: 'join-us',
+					name: 'JoinUs',
+					component: () => import(/* webpackChunkName: "JoinUs" */ '../articles/JoinUs.vue')
 				}
 			]
 		}
