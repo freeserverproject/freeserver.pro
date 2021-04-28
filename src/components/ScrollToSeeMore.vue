@@ -15,6 +15,7 @@ export default {
 	width: 32px;
 	position: relative;
 	overflow: hidden;
+	cursor: pointer;
 }
 
 .scroll-to-see-more::before {

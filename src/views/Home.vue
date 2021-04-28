@@ -43,7 +43,7 @@ export default {
 .home header {
 	height: 100vh;
 	background-size: cover;
-	background-image: url(/assets/pics/mainBackground.png);
+	background-image: url(/assets/pics/mainBackground3.png);
 	color: white;
 	position: relative;
 }

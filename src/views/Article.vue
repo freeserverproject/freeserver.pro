@@ -1,25 +1,35 @@
 <template>
 	<div class="wrapper">
-		<f-nav zooming/>
-		<router-view />
+		<f-nav />
+		<article>
+			<router-view />
+		</article>
 		<f-footer />
 	</div>
 </template>
-
 <script>
 import FNav from '@/components/Nav.vue';
 import FFooter from '@/components/Footer.vue';
 
 export default {
-	name: 'Main',
+	name: 'Article',
 	components: { FNav, FFooter }
 }
 </script>
 <style scoped>
-.wrapper .global-nav {
-	position: fixed;
+.wrapper {
 	width: 100%;
-	left: 0;
+	color: white;
+}
+
+.wrapper .global-nav {
+	position: sticky;
 	top: 0;
+}
+
+.wrapper article {
+	max-width: 700px;
+	width: 100%;
+	margin: 20px auto;
 }
 </style>

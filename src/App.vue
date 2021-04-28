@@ -10,6 +10,7 @@ html {
 body {
 	margin: 0;
 	font-size: 1.6em;
+	background-color: #292929;
 }
 
 #app {
@@ -39,8 +40,8 @@ a::before {
 	transition: all 300ms 0s ease;
 }
 
-a:hover::before,
-a.router-link-exact-match::before {
+a:hover:not(.no-underline)::before,
+a.router-link-exact-match:not(.no-underline)::before {
 	width: calc(100% + 5px);
 }
 </style>

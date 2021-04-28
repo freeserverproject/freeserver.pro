@@ -1,7 +1,9 @@
 <template>
-	<nav class="global-nav">
+	<nav class="global-nav" :class="{zoom}">
 		<span class="logo">
-			<img src="/assets/logo.png" alt="FREESERVER Logo">
+			<router-link :to="{name: 'Home'}" class="no-underline">
+				<img src="/assets/logo.png" alt="FREESERVER Logo">
+			</router-link>
 		</span>
 		<div class="links">
 			<hash-match-link :to="{name: 'Home'}">Home</hash-match-link>
@@ -18,6 +20,25 @@ export default {
 	name: 'FNav',
 	components: {
 		HashMatchLink
+	},
+	data: () => ({
+		scroll: 0
+	}),
+	props: {
+		zooming: {
+			type: Boolean,
+			default: false
+		}
+	},
+	computed: {
+		zoom () {
+			return this.scroll <= 70 && this.zooming;
+		}
+	},
+	mounted () {
+		window.addEventListener('scroll', () => {
+			this.scroll = window.scrollY
+		})
 	}
 }
 </script>
@@ -37,7 +58,7 @@ export default {
 }
 
 .logo img {
-	height: 70px;
+	height: 65px;
 	transition: all 300ms 0s ease;
 }
 
@@ -49,8 +70,7 @@ export default {
 	display: flex;
 }
 
-.global-nav .links a.router-link-hash-match::before,
-.global-nav .links a:hover::before {
+.global-nav .links a.router-link-hash-match::before {
 	width: calc(100% + 5px);
 }
 
