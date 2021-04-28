@@ -43,7 +43,7 @@ a::before {
 }
 
 a:hover:not(.no-underline)::before,
-a.router-link-exact-match:not(.no-underline)::before {
+a.router-link-exact-active:not(.no-underline)::before {
 	width: calc(100% + 5px);
 }
 </style>
