@@ -29,9 +29,9 @@
 			<li>詳細な仕様等は以下のサイトでご覧ください</li>
 		</ul>
 		
-		公式サイト：http://freeserver.pro/<br>
-		JMS：https://minecraft.jp/servers/play.freeserver.pro<br>
-		monocraft：https://monocraft.net/servers/cb23696EAKqv51cX1L6U<br>
+		公式サイト：<a href="//freeserver.pro/" target="_blank">http://freeserver.pro/</a><br>
+		JMS：<a href="https://minecraft.jp/servers/play.freeserver.pro" target="_blank">https://minecraft.jp/servers/play.freeserver.pro</a><br>
+		monocraft：<a href="https://monocraft.net/servers/cb23696EAKqv51cX1L6U" target="_blank">https://monocraft.net/servers/cb23696EAKqv51cX1L6U</a><br>
 
 		<h2>第二条 マナー・利用に際するルール</h2>
 		<h3>1項 チャット・マナー</h3>
