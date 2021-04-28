@@ -8,8 +8,8 @@
 		<div class="links">
 			<hash-match-link :to="{name: 'Home'}">Home</hash-match-link>
 			<hash-match-link :to="{name: 'Home', hash: '#wiki'}">Wiki</hash-match-link>
-			<a href="//maps.freeserver.pro/">Maps</a>
 			<hash-match-link :to="{name: 'Home', hash: '#sns'}">Socials</hash-match-link>
+			<a href="//maps.freeserver.pro/">Maps</a>
 		</div>
 	</nav>
 </template>
@@ -38,7 +38,7 @@ export default {
 	mounted () {
 		window.addEventListener('scroll', () => {
 			this.scroll = window.scrollY
-		})
+		});
 	}
 }
 </script>
@@ -60,7 +60,7 @@ export default {
 
 .logo img {
 	height: 65px;
-	transition: all 300ms 0s ease;
+	transition: height 300ms 0s ease;
 	transform: scale(1.3)
 }
 
