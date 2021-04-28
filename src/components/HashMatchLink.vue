@@ -21,3 +21,13 @@ export default {
 	}
 }
 </script>
+<style scoped>
+a.router-link-exact-active:not(.no-underline)::before {
+	width: 0;
+}
+
+a.router-link-hash-match:not(.no-underline)::before,
+a:hover:not(.no-underline)::before {
+	width: calc(100% + 5px);
+}
+</style>
