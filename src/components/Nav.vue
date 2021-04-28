@@ -44,11 +44,12 @@ export default {
 </script>
 <style scoped>
 .global-nav {
+	font-weight: 200;
 	align-items: center;
 	box-sizing: border-box;
 	display: flex;
 	background-color: #00000085;
-	padding: 0 10px;
+	padding: 0 100px;
 	backdrop-filter: blur(5px);
 	z-index: 900;
 }
