@@ -59,7 +59,6 @@ export default {
 .home header .title h1 {
 	font-weight: 500;
 	display: inline-block;
-	font-family: 'Montserrat', sans-serif;
 }
 
 .home header .scroll-to-see-more {
