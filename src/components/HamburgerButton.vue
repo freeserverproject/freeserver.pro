@@ -17,6 +17,7 @@ export default {
 </script>
 <style scoped>
 label {
+	cursor: pointer;
 	width: 40px;
 	height: 34px;
 	box-sizing: border-box;
