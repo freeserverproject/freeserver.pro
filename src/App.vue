@@ -20,6 +20,7 @@ body {
 	font-family: 'Montserrat', 'M PLUS 1p', 'Avenir', Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	overflow: hidden;
 }
 
 a {
