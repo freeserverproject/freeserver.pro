@@ -33,4 +33,15 @@ footer .copyright {
 footer>* {
 	margin: 0 10px;
 }
+
+@media screen and (max-width: 869px) {
+	footer {
+		box-sizing: border-box;
+		flex-direction: column;
+		padding: 50px;
+	}
+	footer a {
+		margin: 10px 0;
+	}
+}
 </style>
