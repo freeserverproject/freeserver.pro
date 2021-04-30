@@ -32,12 +32,14 @@
 			<h1><hash-match-link :to="{name: 'Home', hash: '#how-to-join'}">参加方法</hash-match-link></h1>
 			<div class="inner">
 				<h2>参加前に</h2>
-				・人の建物を壊さない<br>
-				・ユーザー同士でトラブルを起こさない<br>
-				・みんなで仲良く<br>
+				<div class="content">
+					・人の建物を壊さない<br>
+					・ユーザー同士でトラブルを起こさない<br>
+					・みんなで仲良く<br>
+				</div>
 				<br>
 				<can-copy-element text="play.freeserver.pro" />
-				<div>
+				<div class="link">
 					<router-link :to="{name: 'TOS'}">その他詳細な規約はこちら</router-link>
 				</div>
 			</div>
@@ -59,7 +61,7 @@ export default {
 	mounted () {
 		this.header = this.$el.querySelector('header');
 		window.addEventListener('scroll', () => {
-			this.header.style.backgroundPositionY = `${window.pageYOffset / 5}px`;
+			this.header.style.backgroundPositionY = `${Math.floor(window.pageYOffset) / 5}px`;
 		});
 	}
 }
@@ -130,12 +132,8 @@ export default {
 	padding-top: 0;
 }
 
-.card.how-to-join>div {
+.card.how-to-join div.content {
 	text-align: left;
-}
-
-.card.how-to-join>div>h2 {
-	text-align: center;
 }
 
 .card.about {
