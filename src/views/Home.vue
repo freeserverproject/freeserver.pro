@@ -38,7 +38,7 @@
 				<br>
 				<can-copy-element text="play.freeserver.pro" />
 				<div>
-					<router-link :to="{path: '/tos'}">その他詳細な規約はこちら</router-link>
+					<router-link :to="{name: 'TOS'}">その他詳細な規約はこちら</router-link>
 				</div>
 			</div>
 		</div>
