@@ -28,17 +28,33 @@
 				</span>
 			</div>
 		</div>
+		<div class="card how-to-join" id="how-to-join">
+			<h1><hash-match-link :to="{name: 'Home', hash: '#how-to-join'}">参加方法</hash-match-link></h1>
+			<div class="inner">
+				<h2>参加前に</h2>
+				・人の建物を壊さない<br>
+				・ユーザー同士でトラブルを起こさない<br>
+				・みんなで仲良く<br>
+				<br>
+				<can-copy-element text="play.freeserver.pro" />
+				<div>
+					<hash-match-link :to="{path: '/tos'}">その他詳細な規約はこちら</hash-match-link>
+				</div>
+			</div>
+		</div>
 	</main>
 </template>
 <script>
 import ScrollToSeeMore from '@/components/ScrollToSeeMore.vue';
 import HashMatchLink from '@/components/HashMatchLink.vue';
+import CanCopyElement from '@/components/CanCopyElement.vue';
 
 export default {
 	name: 'Home',
 	components: {
 		ScrollToSeeMore,
-		HashMatchLink
+		HashMatchLink,
+		CanCopyElement
 	},
 	mounted () {
 		this.header = this.$el.querySelector('header');
@@ -108,6 +124,18 @@ export default {
 	font-size: 1.3rem;
 	padding: 30px;
 	padding-bottom: 0;
+}
+
+.card.how-to-join>div {
+	padding-top: 0;
+}
+
+.card.how-to-join>div {
+	text-align: left;
+}
+
+.card.how-to-join>div>h2 {
+	text-align: center;
 }
 
 .card.about {
