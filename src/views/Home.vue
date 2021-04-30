@@ -57,12 +57,6 @@ export default {
 		ScrollToSeeMore,
 		HashMatchLink,
 		CanCopyElement
-	},
-	mounted () {
-		this.header = this.$el.querySelector('header');
-		window.addEventListener('scroll', () => {
-			this.header.style.backgroundPositionY = `${Math.floor(window.pageYOffset) / 5}px`;
-		});
 	}
 }
 </script>
@@ -77,8 +71,6 @@ export default {
 	background-image: url(../assets/pics/mainBackground3.png);
 	color: white;
 	position: relative;
-
-	transition: all 0.1s ease 0s;
 }
 
 .home header .title {
