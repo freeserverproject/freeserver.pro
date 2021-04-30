@@ -43,7 +43,7 @@ export default {
 	mounted () {
 		this.header = this.$el.querySelector('header');
 		window.addEventListener('scroll', () => {
-			this.header.style.backgroundPositionY = `${window.scrollY * 0.3}px`;
+			this.header.style.backgroundPositionY = `${window.pageYOffset / 5}px`;
 		});
 	}
 }
@@ -59,6 +59,8 @@ export default {
 	background-image: url(../assets/pics/mainBackground3.png);
 	color: white;
 	position: relative;
+
+	transition: all 0.1s ease 0s;
 }
 
 .home header .title {
