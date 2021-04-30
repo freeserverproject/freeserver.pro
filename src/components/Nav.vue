@@ -26,7 +26,7 @@ export default {
 		HamburgerButton
 	},
 	data: () => ({
-		scroll: 0,
+		zoom: true,
 		drawerOpen: false
 	}),
 	props: {
@@ -36,13 +36,10 @@ export default {
 		}
 	},
 	computed: {
-		zoom () {
-			return this.scroll <= 70 && this.zooming;
-		}
 	},
 	mounted () {
 		window.addEventListener('scroll', () => {
-			this.scroll = window.scrollY;
+			this.zoom = (window.scrollY <= 70 && this.zooming);
 		});
 	}
 }
