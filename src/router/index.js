@@ -55,4 +55,16 @@ const router = createRouter({
 	]
 });
 
+router.beforeEach((to, from, next) => {
+	const hash = to.path.match(/\/%23(.*)$/);
+	if (hash && hash[1] && !to.hash) {
+		next({
+			path: to.path.replace(new RegExp(`${hash[0]}$`), ''),
+			hash: `#${hash[1]}`
+		});
+	} else {
+		next();
+	}
+});
+
 export default router;
