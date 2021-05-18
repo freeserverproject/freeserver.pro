@@ -8,8 +8,7 @@
 		<div class="links" :class="{open: drawerOpen}" @click="drawerOpen = false">
 			<hash-match-link :to="{name: 'Home', hash: '#about'}">About</hash-match-link>
 			<hash-match-link :to="{name: 'Home', hash: '#feature'}">Feature</hash-match-link>
-			<hash-match-link :to="{name: 'Home', hash: '#wiki'}">Wiki</hash-match-link>
-			<hash-match-link :to="{name: 'Home', hash: '#sns'}">Socials</hash-match-link>
+			<a href="//wiki.freeserver.pro/">Wiki</a>
 			<a href="//maps.freeserver.pro/">Maps</a>
 		</div>
 		<hamburger-button v-model="drawerOpen"/>
