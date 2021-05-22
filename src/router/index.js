@@ -52,7 +52,9 @@ const router = createRouter({
 				}, {
 					path: 'faq',
 					name: 'FAQ',
-					component: () => import(/* webpackChunkName: "FAQ" */ '../articles/FAQ.vue')
+					redirect: () => {
+						window.location.href = 'https://wiki.freeserver.pro/';
+					}
 				}
 			]
 		}
