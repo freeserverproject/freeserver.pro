@@ -49,6 +49,10 @@ const router = createRouter({
 					path: 'tos',
 					name: 'TOS',
 					component: () => import(/* webpackChunkName: "TOS" */ '../articles/TOS.vue')
+				}, {
+					path: 'faq',
+					name: 'FAQ',
+					component: () => import(/* webpackChunkName: "FAQ" */ '../articles/FAQ.vue')
 				}
 			]
 		}
