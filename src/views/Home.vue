@@ -48,14 +48,12 @@
 </template>
 <script>
 import ScrollToSeeMore from '@/components/ScrollToSeeMore.vue';
-import HashMatchLink from '@/components/HashMatchLink.vue';
 import CanCopyElement from '@/components/CanCopyElement.vue';
 
 export default {
 	name: 'Home',
 	components: {
 		ScrollToSeeMore,
-		HashMatchLink,
 		CanCopyElement
 	}
 }
