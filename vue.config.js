@@ -1,3 +1,6 @@
+require = require('esm')(module);
+const routes = require('./src/router/routes').default;
+
 module.exports = {
 	pages: {
 		index: {
@@ -5,5 +8,12 @@ module.exports = {
 			title: "FREESERVER",
 		}
 	},
+	pluginOptions: {
+        sitemap: {
+            baseURL: 'https://freeserver.pro',
+            routes,
+			hashMode: true
+        }
+    },
 	publicPath: './'
 }
