@@ -3,11 +3,11 @@
 		<h1>FREESERVER | プライバシーポリシー</h1>
 		<h3>広告の配信について</h3>
 
-		当サイトは第三者配信の広告サービス「Carbon Ads カーボンアド」を利用しています。<br>
+		当サイトは第三者配信の広告サービス「Google Adsense グーグルアドセンス」を利用しています。<br>
 
 		広告配信事業者は、ユーザーの興味に応じた広告を表示するためにCookie（クッキー）を使用することがあります。<br>
 
-		Cookie（クッキー）を無効にする設定およびCarbon Adsに関する詳細は<a href="https://www.carbonads.net/faq" target="_blank">「Frequently Asked Questions」</a>をご覧ください。<br>
+		Cookie（クッキー）を無効にする設定およびGoogleアドセンスに関する詳細は<a href="https://www.google.co.jp/policies/technologies/ads/" target="_blank">「広告 – ポリシーと規約 – Google」</a>をご覧ください。<br>
 
 		第三者がコンテンツおよび宣伝を提供し、訪問者から直接情報を収集し、訪問者のブラウザにCookie（クッキー）を設定したりこれを認識したりする場合があります。<br>
 
