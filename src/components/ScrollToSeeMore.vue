@@ -3,8 +3,7 @@
 </template>
 <script>
 export default {
-	name: 'ScrollToSeeMore',
-	emits: []
+	name: 'ScrollToSeeMore'
 }
 </script>
 <style scoped>

@@ -17,6 +17,7 @@
 <script>
 import HashMatchLink from './HashMatchLink.vue';
 import HamburgerButton from './HamburgerButton.vue';
+import { onMounted, ref } from 'vue';
 
 export default {
 	name: 'FNav',
@@ -24,22 +25,23 @@ export default {
 		HashMatchLink,
 		HamburgerButton
 	},
-	data: () => ({
-		zoom: true,
-		drawerOpen: false
-	}),
 	props: {
 		zooming: {
 			type: Boolean,
 			default: false
 		}
 	},
-	computed: {
-	},
-	mounted () {
-		window.addEventListener('scroll', () => {
-			this.zoom = (window.scrollY <= 70 && this.zooming);
+	setup (props) {
+		const zoom = ref(true);
+		const drawerOpen = ref(false);
+
+		onMounted(() => {
+			window.addEventListener('scroll', () => {
+				zoom.value = (window.scrollY <= 70 && props.zooming);
+			});
 		});
+
+		return { zoom, drawerOpen };
 	}
 }
 </script>
