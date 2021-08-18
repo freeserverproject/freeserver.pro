@@ -4,6 +4,9 @@
 	</router-link>
 </template>
 <script>
+import { computed } from 'vue';
+import { useRoute } from 'vue-router'
+
 export default {
 	name: 'NavLink',
 	props: {
@@ -12,12 +15,11 @@ export default {
 			required: true
 		}
 	},
-	computed: {
-		hashMatch () {
-			return this.$route.hash === this.$props.to.hash;
-		}
-	},
-	mounted () {
+	setup (props, ) {
+		const route = useRoute();
+
+		const hashMatch = computed(() => route.hash === props.to.hash);
+		return { hashMatch };
 	}
 }
 </script>

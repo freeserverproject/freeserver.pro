@@ -1,31 +1,32 @@
 <template>
-	<div class="copy" @click="copy()">
+	<div class="copy" @click="copy()" ref="rootEl">
 		<span class="text">{{text}}</span>
 		<button>{{buttonText}}</button>
 	</div>
 </template>
 <script>
 import { copyElementText } from '@/util/Util.js';
+import { ref } from 'vue';
 
 export default {
 	name: 'how-to-join',
-	data: () => ({
-		buttonText: 'Copy'
-	}),
 	props: {
 		text: {
 			type: String,
 			default: ''
 		}
 	},
-	methods: {
-		copy () {
-			this.buttonText = 'Copied!!';
-			setTimeout(() => this.buttonText = 'Copy', 2 * 1000)
-			copyElementText(this.$el.querySelector('.copy .text'));
-		}
-	},
-	mounted () {
+	setup () {
+		const rootEl = ref(null);
+		const buttonText = ref('Copy');
+
+		const copy = () => {
+			buttonText.value = 'Copied!!';
+			setTimeout(() => buttonText.value = 'Copy', 2 * 1000);
+			copyElementText(rootEl.value.querySelector('.copy .text'));
+		};
+
+		return { copy, rootEl, buttonText };
 	}
 }
 </script>
