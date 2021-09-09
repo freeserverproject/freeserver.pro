@@ -11,4 +11,4 @@ npm run serve
 ## 担当
 Design: Alpha9n, tererun, tsutoringo
 
-Conding: tsutoringo and Contributors
+Coding: tsutoringo and Contributors
