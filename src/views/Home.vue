@@ -24,7 +24,7 @@
 				ミニゲームも定期開催しています。<br>
 				<span>
 					イベント日程等詳細につきましては<br>
-					Discordにて随時発信しております、是非公式サーバーへご参加ください
+					Discordにて随時発信しております、是非 <a href="https://link.freeserver.pro/discord">公式サーバー</a>へご参加ください
 				</span>
 			</div>
 		</div>
