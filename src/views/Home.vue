@@ -66,7 +66,7 @@ export default {
 .home header {
 	height: 100vh;
 	background-size: cover;
-	background-image: url(../assets/pics/mainBackground3.png);
+	background-image: url(../assets/pics/mainBackground3.webp);
 	color: white;
 	position: relative;
 }
@@ -127,9 +127,9 @@ export default {
 }
 
 .card.about {
-	background-image: url(../assets/pics/aboutBackground.png);
+	background-image: url(../assets/pics/aboutBackground.webp);
 }
 .card.feature {
-	background-image: url(../assets/pics/featureBackground.png);
+	background-image: url(../assets/pics/featureBackground.webp);
 }
 </style>
