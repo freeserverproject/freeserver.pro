@@ -34,12 +34,15 @@ export default [
 					window.location.href = 'https://wiki.freeserver.pro/';
 				}
 			}, {
-
 				path: 'top',
 				name: 'TOP',
 				alias: 'terms-of-pages',
 				component: () => import(/* webpackChunkName: "TOP" */ '../articles/TOP.vue')
 			}
 		]
+	}, {
+		name: 'notFound',
+		path: '/:pathMatch(.*)*',
+		component: () => import(/* webpackChunkName: "NotFound" */ '../views/NotFound.vue')
 	}
 ]
