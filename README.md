@@ -1,7 +1,7 @@
 # official-site
 FREESERVERの公式サイトになる予定です
 
-Pushすると自動でビルドされGithub Pagesで公開されます。
+Pushすると自動でビルドされCloudflare Pagesで公開されます。
 
 ### デバッグ
 ```
