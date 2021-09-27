@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
+  <head prefix="og: http://ogp.me/ns#">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -18,6 +18,16 @@
       gtag('config', 'UA-165931018-1');
     </script>
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <!-- OGP -->
+    <meta property="og:title" content="FREESERVER">
+    <meta property="og:description" content="FREESERVERはマインクラフトのサーバーを運営している団体です。ぜひ起こしください！">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/assets/img/FREESERVER.pro.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@FREESERVERP">
+    <meta name="twitter:creator" content="@tsutoringo">
   </head>
   <body>
     <noscript>
