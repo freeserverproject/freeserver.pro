@@ -1,8 +1,11 @@
+import Main from '../views/Main.vue';
+import NotFound from '../views/NotFound.vue';
+
 export default [
 	{
 		path: '/',
 		name: 'Main',
-		component: () => import(/* webpackChunkName: "Main" */ '../views/Main.vue'),
+		component: Main,
 		children: [
 			{
 				path: '',
@@ -34,12 +37,15 @@ export default [
 					window.location.href = 'https://wiki.freeserver.pro/';
 				}
 			}, {
-
 				path: 'top',
 				name: 'TOP',
 				alias: 'terms-of-pages',
 				component: () => import(/* webpackChunkName: "TOP" */ '../articles/TOP.vue')
 			}
 		]
+	}, {
+		name: 'notFound',
+		path: '/:pathMatch(.*)*',
+		component: NotFound
 	}
 ]

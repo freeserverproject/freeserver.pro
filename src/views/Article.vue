@@ -2,7 +2,8 @@
 	<div class="wrapper">
 		<f-nav />
 		<article>
-			<router-view />
+			<slot v-if="noRouter" />
+			<router-view v-else />
 		</article>
 		<f-footer />
 	</div>
@@ -13,6 +14,12 @@ import FFooter from '@/components/Footer.vue';
 
 export default {
 	name: 'Article',
+	props: {
+		noRouter: {
+			type: Boolean,
+			default: false
+		}
+	},
 	components: { FNav, FFooter }
 }
 </script>
