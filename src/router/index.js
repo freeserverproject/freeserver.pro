@@ -34,9 +34,9 @@ router.beforeEach((to, from, next) => {
 });
 
 router.afterEach(to => {
-  // OGP
-  document.querySelector('meta[property="og:url"]').setAttribute('content', to.fullPath);
-  document.querySelector('meta[property="og:title"]').setAttribute('content', to.meta.title ? `${to.meta.title} | FREESERVER` : 'FREESERVER');
+  const title = to.meta.title ? `${to.meta.title} | FREESERVER` : 'FREESERVER';
+  document.querySelector('meta[property="og:title"]').setAttribute('content', title);
+  document.title = title;
 });
 
 export default router;
