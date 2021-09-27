@@ -7,7 +7,10 @@ export default [
 			{
 				path: '',
 				name: 'Home',
-				component: () => import(/* webpackChunkName: "Home" */ '../views/Home.vue')
+				component: () => import(/* webpackChunkName: "Home" */ '../views/Home.vue'),
+				meta: {
+					title: 'ホーム'
+				}
 			}
 		]
 	}, {
@@ -18,15 +21,24 @@ export default [
 			{
 				path: 'privacy-policy',
 				name: 'PrivacyPolicy',
-				component: () => import(/* webpackChunkName: "PrivacyPolicy" */ '../articles/PrivacyPolicy.vue')
+				component: () => import(/* webpackChunkName: "PrivacyPolicy" */ '../articles/PrivacyPolicy.vue'),
+				meta: {
+					title: 'プライバシーポリシー'
+				}
 			}, {
 				path: 'join-us',
 				name: 'JoinUs',
-				component: () => import(/* webpackChunkName: "JoinUs" */ '../articles/JoinUs.vue')
+				component: () => import(/* webpackChunkName: "JoinUs" */ '../articles/JoinUs.vue'),
+				meta: {
+					title: 'Join US',
+				}
 			}, {
 				path: 'tos',
 				name: 'TOS',
-				component: () => import(/* webpackChunkName: "TOS" */ '../articles/TOS.vue')
+				component: () => import(/* webpackChunkName: "TOS" */ '../articles/TOS.vue'),
+				meta: {
+					title: 'サービス利用規約'
+				}
 			}, {
 				path: 'faq',
 				name: 'FAQ',
@@ -37,7 +49,10 @@ export default [
 				path: 'top',
 				name: 'TOP',
 				alias: 'terms-of-pages',
-				component: () => import(/* webpackChunkName: "TOP" */ '../articles/TOP.vue')
+				component: () => import(/* webpackChunkName: "TOP" */ '../articles/TOP.vue'),
+				meta: {
+					title: 'Webページ利用規約'
+				}
 			}
 		]
 	}, {
