@@ -1,11 +1,8 @@
-import Main from '../views/Main.vue';
-import NotFound from '../views/NotFound.vue';
-
 export default [
 	{
 		path: '/',
 		name: 'Main',
-		component: Main,
+		component: () => import(/* webpackChunkName: "Main" */ '../views/Main.vue'),
 		children: [
 			{
 				path: '',
@@ -46,6 +43,6 @@ export default [
 	}, {
 		name: 'notFound',
 		path: '/:pathMatch(.*)*',
-		component: NotFound
+		component: () => import(/* webpackChunkName: "NotFound" */ '../views/NotFound.vue')
 	}
 ]
