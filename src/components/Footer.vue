@@ -7,8 +7,8 @@
 			<router-link :to="{name: 'JoinUs'}">運営募集</router-link>
 		</section>
 		<section>
-			Minecraft公式ではありません。Mojang から承認されておらず、Mojangとは関係ありません。<br>
-			MinecraftはMojangの商標です。
+			Minecraft 公式ではありません。 Mojang から承認されておらず、 Mojang とは関係ありません。<br>
+			Minecraft は Mojang の商標です。
 		</section>
 		<section class="copyright">&copy;{{ new Date().getFullYear() }} FREESERVER Project</section>
 	</footer>
