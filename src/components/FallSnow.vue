@@ -31,6 +31,8 @@ const particles = {
     value: 6
   }
 };
+
+window.particles = particles;
 </script>
 <style lang="scss">
 .fall-snow {
