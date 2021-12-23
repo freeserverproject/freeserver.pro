@@ -1,7 +1,10 @@
 <template>
 	<router-view/>
+	<fall-snow></fall-snow>
 </template>
-
+<script setup>
+import FallSnow from './components/FallSnow.vue';
+</script>
 <style>
 
 html {
