@@ -15,8 +15,7 @@ body {
 }
 
 #app {
-	font-weight: 400;
-	font-family: 'ta-rb','Montserrat', 'M PLUS 1p', 'Avenir', Helvetica, Arial, sans-serif;
+	font-family: 'Montserrat', 'M PLUS 1p', 'Avenir', Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	overflow: hidden;
