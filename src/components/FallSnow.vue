@@ -9,9 +9,10 @@
   </div>
 </template>
 <script setup>
+import { reactive } from 'vue';
 import { ParticlesComponent as VParticle } from 'particles.vue3';
 
-const particles = {
+const particles = reactive({
   number: {
     value: 200
   },
@@ -30,7 +31,7 @@ const particles = {
     random: true,
     value: 6
   }
-};
+});
 
 window.particles = particles;
 </script>

@@ -1,9 +1,18 @@
 <template>
 	<router-view/>
-	<fall-snow></fall-snow>
+	<fall-snow v-if="effect === 'snow'"></fall-snow>
 </template>
 <script setup>
+import { ref } from 'vue';
 import FallSnow from './components/FallSnow.vue';
+const effect = ref('');
+
+const date = new Date();
+
+if ((date.getMonth() === 11 || (date.getMonth() === 0 && date.getDate() <= 10))) {
+	effect.value = 'snow';
+}
+
 </script>
 <style>
 
