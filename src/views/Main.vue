@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import FNav from '@/components/Nav.vue';
-import FFooter from '@/components/Footer.vue';
+import FNav from '../components/Nav.vue';
+import FFooter from '../components/Footer.vue';
 
 export default {
 	name: 'Main',

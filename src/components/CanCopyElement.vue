@@ -5,7 +5,7 @@
 	</div>
 </template>
 <script>
-import { copyElementText } from '@/util/Util.js';
+import { copyElementText } from '../util/Util.js';
 import { ref } from 'vue';
 
 export default {
