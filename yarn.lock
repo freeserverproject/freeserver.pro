@@ -877,6 +877,11 @@ tsparticles@^1.42.1:
   resolved "https://registry.yarnpkg.com/tsparticles/-/tsparticles-1.42.1.tgz#5b473c9fef8eaced5f4cd6ff525a74809603bed3"
   integrity sha512-LdFNNyecnbv3wVy+2p93SASsfDDSc3IuMPdHkKKQu0aukeZlL7apJKy53dIAjH8el4MrTYqM2Bg+Tee64MqOXA==
 
+typescript@^4.5.4:
+  version "4.6.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.6.2.tgz#fe12d2727b708f4eef40f51598b3398baa9611d4"
+  integrity sha512-HM/hFigTBHZhLXshn9sN37H085+hQGeJHJ/X7LpBWLID/fbc2acUMfU+lGD98X81sKP+pFa9f0DZmCwB9GnbAg==
+
 upath@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/upath/-/upath-2.0.1.tgz#50c73dea68d6f6b990f51d279ce6081665d61a8b"
