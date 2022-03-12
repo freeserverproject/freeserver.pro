@@ -47,8 +47,8 @@
 	</main>
 </template>
 <script>
-import ScrollToSeeMore from '@/components/ScrollToSeeMore.vue';
-import CanCopyElement from '@/components/CanCopyElement.vue';
+import ScrollToSeeMore from '../components/ScrollToSeeMore.vue';
+import CanCopyElement from '../components/CanCopyElement.vue';
 
 export default {
 	name: 'Home',
