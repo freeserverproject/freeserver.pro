@@ -1,3 +1,5 @@
+<script lang="ts" setup>
+</script>
 <template>
 	<div>
 		<h1>FREESERVER各Webページに関する規約</h1>
@@ -21,8 +23,3 @@
 		発効同日
 	</div>
 </template>
-<script>
-export default {
-	name: 'TOP'
-}
-</script>

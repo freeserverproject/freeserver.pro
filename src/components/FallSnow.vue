@@ -1,14 +1,4 @@
-<template>
-  <div id="fall-snow">
-    <v-particle 
-      id="fall-snow"
-      :options="{
-        particles
-      }"
-    />
-  </div>
-</template>
-<script setup>
+<script lang="ts" setup>
 import { reactive } from 'vue';
 import { ParticlesComponent as VParticle } from 'particles.vue3';
 
@@ -32,9 +22,17 @@ const particles = reactive({
     value: 6
   }
 });
-
-window.particles = particles;
 </script>
+<template>
+  <div id="fall-snow">
+    <v-particle 
+      id="fall-snow"
+      :options="{
+        particles
+      }"
+    />
+  </div>
+</template>
 <style lang="scss">
 .fall-snow {
   position: fixed;

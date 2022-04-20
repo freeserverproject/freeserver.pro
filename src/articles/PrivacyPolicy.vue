@@ -1,3 +1,5 @@
+<script lang="ts" setup>
+</script>
 <template>
 	<div>
 		<h1>FREESERVER | プライバシーポリシー</h1>
@@ -41,8 +43,3 @@
 		当サイトに掲載された内容によって生じた損害等の一切の責任を負いかねますのでご了承ください。<br>
 	</div>
 </template>
-<script>
-export default {
-	name: 'PrivacyPolicy'
-}
-</script>

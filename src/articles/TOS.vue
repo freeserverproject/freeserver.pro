@@ -1,3 +1,5 @@
+<script lang="ts" setup>
+</script>
 <template>
 	<div>
 		<h1>Minecraft サーバー利用に関する規約</h1>
@@ -135,8 +137,3 @@
 		発効同日
 	</div>
 </template>
-<script>
-export default {
-	name: 'TOS'
-}
-</script>

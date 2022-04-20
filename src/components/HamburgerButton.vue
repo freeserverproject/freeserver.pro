@@ -1,20 +1,17 @@
+<script lang="ts" setup>
+const emit = defineEmits<{
+	(e: 'update:modelValue', value: boolean): void;
+}>();
+
+const props = defineProps<{
+	modelValue?: boolean;
+}>();
+</script>
 <template>
 	<label class="hamburger-button">
-		<input type="checkbox" @change="$emit('update:modelValue', $event.target.checked)" :checked="modelValue">
+		<input type="checkbox" @change="emit('update:modelValue', ($event.target as HTMLInputElement)?.checked || false)" :checked="modelValue">
 	</label>
 </template>
-<script>
-export default {
-	name: 'HamburgerButton',
-	emits: ['update:modelValue'],
-	props: {
-		modelValue: {
-			type: Boolean,
-			default: false
-		}
-	}
-}
-</script>
 <style scoped>
 label {
 	cursor: pointer;

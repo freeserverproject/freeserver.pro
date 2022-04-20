@@ -1,3 +1,5 @@
+<script lang="ts" setup>
+</script>
 <template>
 	<footer>
 		<section class="links">
@@ -13,11 +15,6 @@
 		<section class="copyright">&copy;{{ new Date().getFullYear() }} FREESERVER Project</section>
 	</footer>
 </template>
-<script>
-export default {
-	name: 'FFotter'
-}
-</script>
 <style scoped lang="scss">
 footer {
 	background-color: #121212;

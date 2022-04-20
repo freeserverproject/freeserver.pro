@@ -14,36 +14,29 @@
 		<hamburger-button v-model="drawerOpen"/>
 	</nav>
 </template>
-<script>
+<script lang="ts" setup>
 import HashMatchLink from './HashMatchLink.vue';
 import HamburgerButton from './HamburgerButton.vue';
 import { onMounted, ref } from 'vue';
 
-export default {
-	name: 'FNav',
-	components: {
-		HashMatchLink,
-		HamburgerButton
-	},
-	props: {
-		zooming: {
-			type: Boolean,
-			default: false
-		}
-	},
-	setup (props) {
-		const zoom = ref(true);
-		const drawerOpen = ref(false);
-
-		onMounted(() => {
-			window.addEventListener('scroll', () => {
-				zoom.value = (window.scrollY <= 70 && props.zooming);
-			});
-		});
-
-		return { zoom, drawerOpen };
+const props = withDefaults(
+	defineProps<{
+		zooming?: boolean;
+	}>(),
+	{
+		zooming: false
 	}
-}
+)
+
+const zoom = ref(true);
+const drawerOpen = ref(false);
+
+onMounted(() => {
+	window.addEventListener('scroll', () => {
+		zoom.value = (window.scrollY <= 70 && props.zooming);
+	});
+});
+
 </script>
 <style scoped>
 .global-nav {

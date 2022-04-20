@@ -1,11 +1,9 @@
+<script lang="ts" setup>
+
+</script>
 <template>
 	<span class="scroll-to-see-more"></span>
 </template>
-<script>
-export default {
-	name: 'ScrollToSeeMore'
-}
-</script>
 <style scoped>
 .scroll-to-see-more {
 	border-radius: 32px;
