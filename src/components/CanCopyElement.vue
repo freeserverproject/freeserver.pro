@@ -5,7 +5,7 @@
 	</div>
 </template>
 <script lang="ts" setup>
-import { copyElementText } from '../util/Util.js';
+import { copyElementText } from '../util/Util';
 import { ref } from 'vue';
 
 const props = withDefaults(
