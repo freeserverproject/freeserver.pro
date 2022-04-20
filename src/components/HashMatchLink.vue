@@ -6,9 +6,6 @@ const props = defineProps<{
 	to: RouteLocationRaw;
 }>();
 
-if (typeof props.to === 'string') return;
-
-
 const route = useRoute();
 
 const hashMatch = computed(() => typeof props.to !== 'string' && route.hash === props.to.hash);
