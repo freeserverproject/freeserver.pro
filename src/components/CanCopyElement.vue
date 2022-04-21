@@ -4,31 +4,29 @@
 		<button>{{buttonText}}</button>
 	</div>
 </template>
-<script>
-import { copyElementText } from '../util/Util.js';
+<script lang="ts" setup>
+import { copyElementText } from '../util/Util';
 import { ref } from 'vue';
 
-export default {
-	name: 'how-to-join',
-	props: {
-		text: {
-			type: String,
-			default: ''
-		}
-	},
-	setup () {
-		const rootEl = ref(null);
-		const buttonText = ref('Copy');
-
-		const copy = () => {
-			buttonText.value = 'Copied!!';
-			setTimeout(() => buttonText.value = 'Copy', 2 * 1000);
-			copyElementText(rootEl.value.querySelector('.copy .text'));
-		};
-
-		return { copy, rootEl, buttonText };
+const props = withDefaults(
+	defineProps<{
+		text: string;
+	}>(),
+	{
+		text: '',
 	}
-}
+);
+
+const rootEl = ref<HTMLElement>();
+const buttonText = ref('Copy');
+
+const copy = () => {
+	buttonText.value = 'Copied!!';
+	setTimeout(() => buttonText.value = 'Copy', 2 * 1000);
+	const el = rootEl.value?.querySelector('.copy .text')
+	if (el) copyElementText(el);
+};
+
 </script>
 <style scoped>
 .copy {

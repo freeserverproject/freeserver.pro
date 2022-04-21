@@ -6,17 +6,19 @@ const router = createRouter({
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) return savedPosition;
 
-    const position = {
-      behavior: 'smooth',
-      top: 90
-    };
-
-    if (to.hash && document.querySelector(to.hash)) position.el = to.hash;
-    else {
-      position.top = 0;
-      position.left = 0;
+    if (to.hash && document.querySelector(to.hash)) {
+      return {
+        behavior: 'smooth',
+        top: 90,
+        el: to.hash
+      }
     }
-    return position;
+
+    return {
+      behavior: 'smooth',
+      top: 0,
+      left: 0
+    };
   },
   routes
 });
@@ -35,7 +37,7 @@ router.beforeEach((to, from, next) => {
 
 router.afterEach(to => {
   const title = to.meta.title ? `${to.meta.title} | FREESERVER` : 'FREESERVER';
-  document.querySelector('meta[property="og:title"]').setAttribute('content', title);
+  document.querySelector('meta[property="og:title"]')?.setAttribute('content', title);
   document.title = title;
 });
 

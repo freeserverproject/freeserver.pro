@@ -1,4 +1,6 @@
-export default [
+import { RouteRecordRaw } from 'vue-router';
+
+const routes: RouteRecordRaw[] =  [
 	{
 		path: '/',
 		name: 'Main',
@@ -40,12 +42,6 @@ export default [
 					title: 'サービス利用規約'
 				}
 			}, {
-				path: 'faq',
-				name: 'FAQ',
-				redirect: () => {
-					window.location.href = 'https://wiki.freeserver.pro/';
-				}
-			}, {
 				path: 'top',
 				name: 'TOP',
 				alias: 'terms-of-pages',
@@ -61,3 +57,5 @@ export default [
 		component: () => import(/* webpackChunkName: "NotFound" */ '../views/NotFound.vue')
 	}
 ]
+
+export default routes;

@@ -1,3 +1,5 @@
+<script lang="ts" setup>
+</script>
 <template>
 	<div>
 		<h1>運営募集について</h1>
@@ -5,8 +7,3 @@
 		詳細に関しては<a href="https://wiki.freeserver.pro/recruit-info.html">Wikiの記事</a>を御覧ください。
 	</div>
 </template>
-<script>
-export default {
-	name: 'JoinUs'
-}
-</script>

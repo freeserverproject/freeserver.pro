@@ -2,7 +2,7 @@
 	<router-view/>
 	<fall-snow v-if="effect === 'snow'"></fall-snow>
 </template>
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue';
 import FallSnow from './components/FallSnow.vue';
 const effect = ref('');

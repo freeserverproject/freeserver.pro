@@ -46,7 +46,7 @@
 		</div>
 	</main>
 </template>
-<script>
+<script lang="ts">
 import ScrollToSeeMore from '../components/ScrollToSeeMore.vue';
 import CanCopyElement from '../components/CanCopyElement.vue';
 

@@ -1,3 +1,16 @@
+<script lang="ts" setup>
+import FNav from '../components/Nav.vue';
+import FFooter from '../components/Footer.vue';
+
+const props = withDefaults(
+	defineProps<{
+		noRouter?: boolean;
+	}>(),
+	{
+		noRouter: false,
+	}
+)
+</script>
 <template>
 	<div class="wrapper">
 		<f-nav />
@@ -8,21 +21,6 @@
 		<f-footer />
 	</div>
 </template>
-<script>
-import FNav from '../components/Nav.vue';
-import FFooter from '../components/Footer.vue';
-
-export default {
-	name: 'Article',
-	props: {
-		noRouter: {
-			type: Boolean,
-			default: false
-		}
-	},
-	components: { FNav, FFooter }
-}
-</script>
 <style scoped>
 .wrapper {
 	width: 100%;
