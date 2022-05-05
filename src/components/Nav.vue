@@ -1,19 +1,3 @@
-<template>
-	<nav class="global-nav" :class="{zoom}">
-		<span class="logo">
-			<router-link :to="{name: 'Home'}" class="no-underline">
-				<img src="../assets/logo.webp" alt="FREESERVER Logo">
-			</router-link>
-		</span>
-		<div class="links" :class="{open: drawerOpen}" @click="drawerOpen = false">
-			<hash-match-link :to="{name: 'Home', hash: '#about'}">About</hash-match-link>
-			<hash-match-link :to="{name: 'Home', hash: '#feature'}">Feature</hash-match-link>
-			<a href="//wiki.freeserver.pro/">Wiki</a>
-			<a href="//maps.freeserver.pro/">Maps</a>
-		</div>
-		<hamburger-button v-model="drawerOpen"/>
-	</nav>
-</template>
 <script lang="ts" setup>
 import HashMatchLink from './HashMatchLink.vue';
 import HamburgerButton from './HamburgerButton.vue';
@@ -38,6 +22,22 @@ onMounted(() => {
 });
 
 </script>
+<template>
+	<nav class="global-nav" :class="{zoom}">
+		<span class="logo">
+			<router-link :to="{name: 'Home'}" class="no-underline">
+				<img src="../assets/logo.webp" alt="FREESERVER Logo">
+			</router-link>
+		</span>
+		<div class="links" :class="{open: drawerOpen}" @click="drawerOpen = false">
+			<hash-match-link :to="{name: 'Home', hash: '#about'}">About</hash-match-link>
+			<hash-match-link :to="{name: 'Home', hash: '#feature'}">Feature</hash-match-link>
+			<a href="//wiki.freeserver.pro/">Wiki</a>
+			<a href="//maps.freeserver.pro/">Maps</a>
+		</div>
+		<hamburger-button v-model="drawerOpen"/>
+	</nav>
+</template>
 <style scoped>
 .global-nav {
 	font-weight: 200;

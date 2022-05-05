@@ -1,9 +1,3 @@
-<template>
-	<div class="copy" @click="copy()" ref="rootEl">
-		<span class="text">{{text}}</span>
-		<button>{{buttonText}}</button>
-	</div>
-</template>
 <script lang="ts" setup>
 import { copyElementText } from '../util/Util';
 import { ref } from 'vue';
@@ -28,6 +22,12 @@ const copy = () => {
 };
 
 </script>
+<template>
+	<div class="copy" @click="copy()" ref="rootEl">
+		<span class="text">{{text}}</span>
+		<button>{{buttonText}}</button>
+	</div>
+</template>
 <style scoped>
 .copy {
 	text-align: center;
