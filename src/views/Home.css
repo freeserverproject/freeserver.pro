@@ -1,0 +1,73 @@
+.home {
+  width: 100%;
+}
+
+.home header {
+  height: 100vh;
+  background-size: cover;
+  background-image: url(../assets/pics/mainBackground3.webp);
+  color: white;
+  position: relative;
+}
+
+.home header .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.home header .title h1 {
+  font-weight: 500;
+  display: inline-block;
+}
+
+.home header .scroll-to-see-more {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.card {
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  overflow: hidden;
+  color: white;
+  padding-bottom: 30px;
+  font-weight: 400;
+  margin: 20px;
+}
+
+.card > div {
+  display: inline-block;
+  background-color: #0000004b;
+  border-radius: 3px;
+  padding: 50px;
+  backdrop-filter: blur(5px);
+}
+
+.card > div > span {
+  display: inline-block;
+  font-size: 1.3rem;
+  padding: 30px;
+  padding-bottom: 0;
+}
+
+.card.how-to-join > div {
+  padding-top: 0;
+}
+
+.card.how-to-join div.content {
+  text-align: left;
+}
+
+.card.about {
+  background-image: url(../assets/pics/aboutBackground.webp);
+}
+.card.feature {
+  background-image: url(../assets/pics/featureBackground.webp);
+}
