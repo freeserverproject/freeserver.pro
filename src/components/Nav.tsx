@@ -10,8 +10,13 @@ interface NavProps {
 }
 
 export default function Nav({ zooming = false }: NavProps) {
-  const [zoom, setZoom] = useState(true);
+  const [zoom, setZoom] = useState(() => window.scrollY <= 70 && zooming);
   const [drawerOpen, setDrawerOpen] = useState(false);
+
+  useEffect(() => {
+    // zoomingプロップが変わった時に状態を更新
+    setZoom(window.scrollY <= 70 && zooming);
+  }, [zooming]);
 
   useEffect(() => {
     const handleScroll = () => {
