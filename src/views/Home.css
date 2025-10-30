@@ -73,3 +73,10 @@
 .card.feature {
   background-image: url(../assets/pics/featureBackground.webp);
 }
+
+@media screen and (max-width: 768px) {
+  .home header {
+    background-attachment: scroll;
+    background-position: center bottom;
+  }
+}
